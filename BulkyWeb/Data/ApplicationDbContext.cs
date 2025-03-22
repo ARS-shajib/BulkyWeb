@@ -20,5 +20,14 @@ namespace BulkyWeb.Data
         /*How It Works:
         When you perform operations like context.Categories.Add(), context.SaveChanges(), or context.Categories.ToList(), 
         EF Core translates these into SQL queries for the database.*/
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasData(
+                new Category { Id = 1, Name = "Action", DisplayOrder = 1},
+                new Category { Id = 2, Name = "Scifi", DisplayOrder = 2},
+                new Category { Id = 3, Name = "Coding", DisplayOrder = 3}
+                );
+        }
     }
 }
