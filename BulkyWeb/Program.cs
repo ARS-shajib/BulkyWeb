@@ -1,5 +1,5 @@
-/*BulkyWeb.Data: Includes ApplicationDbContext (which is defined in the first file).*/
-using BulkyWeb.Data;
+/*Bulky.DataAccess.Data: Includes ApplicationDbContext (which is defined in the first file).*/
+using Bulky.DataAccess.Data;
 /*Microsoft.EntityFrameworkCore: Required to configure the database.*/
 using Microsoft.EntityFrameworkCore;
 /*Creates a web application builder, which is responsible for setting up services (like EF Core, MVC, authentication, etc.).*/

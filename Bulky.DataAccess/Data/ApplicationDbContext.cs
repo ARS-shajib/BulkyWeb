@@ -1,8 +1,8 @@
-﻿using BulkyWeb.Models;
+﻿using Bulky.Models.Models;
 /*Microsoft.EntityFrameworkCore: Provides EF Core functionalities.*/
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyWeb.Data
+namespace Bulky.DataAccess.Data
 {
     /*This class inherits from DbContext, which is a built-in EF Core class.
     It manages the database connection and enables CRUD (Create, Read, Update, Delete) operations.*/
